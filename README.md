@@ -35,7 +35,7 @@ This cloud-based API server lets you organize conferences and sessions, and curr
 6. Update the value of CLIENT_ID in static/js/app.js to the Client ID.
 7. Run at local:
   ```
-  Run: "dep_appserver.py ." in your working folder in your terminal.
+  Run: "dev_appserver.py ." in your working folder in your terminal.
   
   Go to:
   localhost:8080/ (conference app with some limited UI)
