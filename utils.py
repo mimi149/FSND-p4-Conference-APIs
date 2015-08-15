@@ -10,8 +10,9 @@ from google.appengine.api import urlfetch
 
 from models import Profile
 
+
 def getUserId(user, id_type="email"):
-    
+
     if id_type == "email":
         return user.email()
 
@@ -49,10 +50,11 @@ def getUserId(user, id_type="email"):
         else:
             return str(uuid.uuid1().get_hex())
 
+
 def currentUser():
-    """ Check if user already login and his or her profile is saved, return 
-        some userful datas."""
-        
+    """ Check if user already login and his or her profile is saved, return
+        some userful data."""
+
     user = endpoints.get_current_user()
     if not user:
         raise endpoints.UnauthorizedException('Authorization required')
@@ -60,16 +62,17 @@ def currentUser():
     userId = getUserId(user)
     # make profile key
     profileKey = ndb.Key(Profile, userId)
-    
+
     # get the user profile from datastore and display name
     profile = profileKey.get()
-    
+
     if not profile:
-        raise endpoints.UnauthorizedException('You must save your profile first')        
-    
+        raise endpoints.UnauthorizedException('You must save your profile first')
+
     userDisplayName = getattr(profile, 'displayName')
-    
+
     return user, userId, userDisplayName, profileKey
+
 
 def duration(startTime, endTime):
     """ Calculate and convert duration into readable format."""
@@ -77,5 +80,5 @@ def duration(startTime, endTime):
     minutes = int((endTime - startTime).total_seconds() / 60)
     if minutes < 60:
         return "%s'" % minutes
-    elif (minutes/60) < 24:
-        return "%sh %s'" % (minutes//60, minutes%60)
+    elif (minutes / 60) < 24:
+        return "%sh %s'" % (minutes // 60, minutes % 60)

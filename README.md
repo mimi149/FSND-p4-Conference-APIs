@@ -11,9 +11,9 @@ This cloud-based API server lets you organize conferences and sessions, and curr
 2. Create, read, update conferences
 3. Register/ unregister for conferences
 4. Create and read speakers for sessions
-4. Create and read sessions for conferences (only the organizer of the conference can create its sessions.)
-5. Add/ remove sessions to user's wishlist
-6. Query for sessions and conferences.
+5. Create and read sessions for conferences (only the organizer of the conference can create its sessions.)
+6. Add/ remove sessions to user's wishlist
+7. Query for sessions and conferences.
  
 ### Products
 [App Engine](https://cloud.google.com/appengine/docs)
@@ -56,4 +56,4 @@ This cloud-based API server lets you organize conferences and sessions, and curr
   and you can see all of them in Datastore Viewer.
   
   ```
-You can see more details about the project design and implementation in readme.odt.
+You can see more details about the project design and implementation in readme_full.odt or readme_full.md.

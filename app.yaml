@@ -7,8 +7,8 @@ threadsafe: yes
 handlers:       # static then dynamic
 
 - url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
+  static_files: static/images/favicon.ico
+  upload: static/images/favicon\.ico
 
 - url: /js
   static_dir: static/js
@@ -21,6 +21,7 @@ handlers:       # static then dynamic
 
 - url: /fonts
   static_dir: static/fonts
+  mime_type: "static/fonts"
 
 - url: /partials
   static_dir: static/partials
@@ -31,6 +32,9 @@ handlers:       # static then dynamic
   secure: always
 
 - url: /tasks/send_confirmation_email
+  script: main.app
+
+- url: /tasks/setFeaturedSpeaker
   script: main.app
 
 - url: /crons/set_announcement
@@ -51,3 +55,4 @@ libraries:
 # pycrypto library used for OAuth2 (req'd for authenticated APIs)
 - name: pycrypto
   version: latest
+

@@ -26,6 +26,12 @@ indexes:
 - kind: Conference
   properties:
   - name: city
+  - name: month
+  - name: name
+
+- kind: Conference
+  properties:
+  - name: city
   - name: name
 
 - kind: Conference
@@ -81,6 +87,11 @@ indexes:
   properties:
   - name: month
   - name: name
+
+- kind: Conference
+  properties:
+  - name: name
+  - name: month
 
 - kind: Conference
   properties:
@@ -116,6 +127,11 @@ indexes:
   properties:
   - name: endTime
   - name: name
+
+- kind: Session
+  properties:
+  - name: lateSession
+  - name: typeOfSession
 
 - kind: Session
   properties:
