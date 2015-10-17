@@ -1,9 +1,12 @@
 ## p4_Conference_APIs
 This project, the fourth in [Udacity’s Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004), focuses on using Google Cloud Platform to develop a scalable web app, and it's built with Google App Engine (Python), Google NDB Datastore, and Google Cloud Endpoints.
 
-You can check out the demo web page at [https://p4conference.appspot.com](https://p4conference.appspot.com)
+You can see more details about the project design and implementation in readme_full.pdf.
 
-Currently, the demo page does not support all functionality. You can find out all APIs [here](https://apis-explorer.appspot.com/apis-explorer/?base=https://p4conference.appspot.com/_ah/api#p/conference/v1/)
+You can find out all APIs at [https://apis-explorer.appspot.com/apis-explorer/?base=https://p4conference.appspot.com/_ah/api#p/conference/v1/](https://apis-explorer.appspot.com/apis-explorer/?base=https://p4conference.appspot.com/_ah/api#p/conference/v1/)
+
+You can check out the demo web page at [https://p4conference.appspot.com](https://p4conference.appspot.com)
+Currently, the demo page does not support all functionality.
 
 This cloud-based API server lets you organize conferences and sessions, and currently has following functionality:
 
@@ -56,4 +59,4 @@ This cloud-based API server lets you organize conferences and sessions, and curr
   and you can see all of them in Datastore Viewer.
   
   ```
-You can see more details about the project design and implementation in readme_full.odt or readme_full.md.
+
