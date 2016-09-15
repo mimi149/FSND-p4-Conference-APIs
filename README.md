@@ -1,7 +1,7 @@
 ## p4_Conference_APIs
 This project, the fourth in [Udacity’s Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004), focuses on using Google Cloud Platform to develop a scalable web app, and it's built with Google App Engine (Python), Google NDB Datastore, and Google Cloud Endpoints.
 
-You can see more details about the project design and implementation in readme_full.pdf.
+Please read more information in **readme_full.pdf** (project design and implementation.)
 
 You can find out all APIs at [https://apis-explorer.appspot.com/apis-explorer/?base=https://p4conference.appspot.com/_ah/api#p/conference/v1/](https://apis-explorer.appspot.com/apis-explorer/?base=https://p4conference.appspot.com/_ah/api#p/conference/v1/)
 
